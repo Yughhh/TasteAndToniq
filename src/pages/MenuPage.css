@@ -135,7 +135,8 @@
 
 .menu-page__item-name {
   color: var(--dark-gray);
-  flex-shrink: 0;
+  flex: 0 1 auto;
+  min-width: 0;
 }
 
 .menu-page__item-dots {
