@@ -28,8 +28,9 @@
 }
 
 .footer__logo-img {
-  height: 120px;
-  width: auto;
+  max-height: 100px;
+  height: auto;
+  max-width: 100%;
   object-fit: contain;
   margin-bottom: 0.5rem;
 }

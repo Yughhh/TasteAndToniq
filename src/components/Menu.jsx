@@ -19,27 +19,27 @@ const dishes = [
   {
     name: 'Hakka Noodles',
     desc: 'Stir-fried noodles with fresh veggies and aromatic spices — our most-loved Indo-Chinese classic.',
-    img: unsplash('1714611446765-3e85644ea4ae'), // Noodles - Mustafa Fatemi
+    img: '/images/hakka_noodles.png',
   },
   {
     name: 'Pizza',
     desc: 'Crispy base, stretchy cheese, and your choice of toppings — comfort food done right.',
-    img: unsplash('1772494047889-4a7beb5dbad0'), // Margherita pizza - Brelyn Bashrum
+    img: '/images/pizza.png',
   },
   {
     name: 'Veggie Burger',
     desc: 'A hearty patty with fresh veggies and our secret sauce. Simple, satisfying, and delicious.',
-    img: unsplash('1569691802417-e5e1ec314e81'), // Veggie burger - Nadine Primeau
+    img: '/images/veggie_burger.png',
   },
   {
     name: 'Chocolate Shake',
     desc: 'Rich, thick, and indulgent — the perfect sweet ending or anytime treat.',
-    img: unsplash('1761637592257-3c5911ae5a3a'), // Chocolate milkshake - Christian Agbede
+    img: '/images/chocolate_shake.png',
   },
   {
     name: 'Cold Coffee with Ice Cream',
     desc: 'Chilled espresso blended with vanilla ice cream. Refreshment redefined.',
-    img: unsplash('1771405317950-04de06a70166'), // Iced coffee - Madeline Liu
+    img: '/images/cold_coffee_ice_cream.png',
   },
 ]
 

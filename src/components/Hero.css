@@ -38,8 +38,9 @@
 }
 
 .hero__logo {
-  height: 100px;
-  width: auto;
+  max-height: 140px;
+  height: auto;
+  max-width: 100%;
   margin: 0 auto 1.25rem;
   filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
   animation: fadeUp 0.8s ease-out;
@@ -47,7 +48,7 @@
 
 @media (min-width: 768px) {
   .hero__logo {
-    height: 140px;
+    height: 180px;
   }
 }
 
