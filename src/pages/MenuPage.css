@@ -1,0 +1,200 @@
+.menu-page {
+  padding-top: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #faf9f7 0%, #fff 20%, #faf9f7 100%);
+}
+
+.menu-page__hero {
+  background: linear-gradient(135deg, var(--charcoal) 0%, #2d2d2d 100%);
+  padding: 6rem 1.5rem 4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-page__hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9A45C' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.5;
+}
+
+.menu-page__hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.menu-page__back {
+  display: inline-block;
+  color: var(--gold);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  transition: color 0.2s;
+}
+
+.menu-page__back:hover {
+  color: var(--beige);
+}
+
+.menu-page__logo {
+  height: 120px;
+  width: auto;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+.menu-page__title {
+  font-size: clamp(2.25rem, 6vw, 3.5rem);
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.menu-page__subtitle {
+  color: var(--beige);
+  font-size: 1.1rem;
+  opacity: 0.95;
+  margin-bottom: 0.5rem;
+}
+
+.menu-page__note {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.menu-page__content {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.menu-page__category {
+  margin-bottom: 3.5rem;
+  background: var(--white);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.menu-page__category:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.menu-page__category-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  margin-bottom: 1.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid var(--gold);
+  letter-spacing: 0.12em;
+}
+
+.menu-page__subcategory {
+  margin-bottom: 1.5rem;
+}
+
+.menu-page__subcategory:last-child {
+  margin-bottom: 0;
+}
+
+.menu-page__subcategory-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.menu-page__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-page__item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.12);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.menu-page__item:last-child {
+  border-bottom: none;
+}
+
+.menu-page__item-name {
+  color: var(--dark-gray);
+  flex-shrink: 0;
+}
+
+.menu-page__item-dots {
+  flex: 1;
+  min-width: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menu-page__item-dots::before {
+  content: ' · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ';
+  letter-spacing: 0.15em;
+  color: rgba(0, 0, 0, 0.18);
+  font-size: 0.6rem;
+}
+
+.menu-page__item-price {
+  font-weight: 500;
+  color: var(--charcoal);
+  flex-shrink: 0;
+}
+
+.menu-page__footer-note {
+  text-align: center;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(201, 164, 92, 0.08) 0%, rgba(107, 142, 35, 0.05) 100%);
+  border-radius: 12px;
+  border: 1px solid rgba(201, 164, 92, 0.2);
+}
+
+.menu-page__footer-note p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--charcoal);
+}
+
+.menu-page__cta {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.menu-page__cta .btn {
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .menu-page__category {
+    padding: 2.5rem 3rem;
+  }
+
+  .menu-page__item {
+    font-size: 1rem;
+    gap: 1rem;
+  }
+
+  .menu-page__subcategory-title {
+    font-size: 0.95rem;
+  }
+}
