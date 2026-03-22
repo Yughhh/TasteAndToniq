@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Hero.css'
 
 export default function Hero() {
@@ -26,9 +27,9 @@ export default function Hero() {
           <a href="#services" className="btn btn--outline btn--hero">
             Book Venue
           </a>
-          <a href="/menu" className="btn btn--outline btn--hero">
+          <Link to="/menu" className="btn btn--outline btn--hero">
             View Menu
-          </a>
+          </Link>
         </div>
         <div className="hero__badge">
           <span className="hero__badge-star">⭐</span>
